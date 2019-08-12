@@ -1,0 +1,76 @@
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+#bg1 {
+  background-image: url("img/bg1.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg2 {
+  background-image: url("img/bg2.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg3 {
+  background-image: url("img/bg3.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg4 {
+  background-image: url("img/bg4.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#circle-bar {
+  float: right;
+  position:fixed;
+  top: 50%;
+  right: 8px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#circle-bar a {
+  display: block;
+  text-align: center;
+  margin: 16px;
+  transition: all 0.3s ease;
+}
+
+.dot {
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  -moz-box-shadow: 2px 2px 0px #aaa;
+  -webkit-box-shadow: 2px 2px 0px #aaa;
+  box-shadow: 2px 2px 0px #aaa;
+}
+
+.active, .dot:hover{
+  background-color: #666;
+}
